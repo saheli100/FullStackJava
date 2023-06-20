@@ -1,0 +1,16 @@
+import {​​​​​​ Coach }​​​​​​ from "./coach";
+import {​​​​​​ CricketCoach }​​​​​​ from "./CricketCoach";
+import {​​​​​​ FortuneService }​​​​​​ from "./FortuneService";
+import {​​​​​​ HappyFortuneService }​​​​​​ from "./HappyFortuneService";
+import {​​​​​​ SadFortuneService }​​​​​​ from "./SadFortuneService";
+import {​​​​​​ SwimmingCoach }​​​​​​ from "./SwimmingCoach";
+let  myCoach:Coach;
+let fortueService:FortuneService;
+fortueService=new HappyFortuneService();
+myCoach=new CricketCoach(fortueService);
+console.log(myCoach.getDailyWorkout());
+console.log(myCoach.getDailyFortune());
+fortueService=new SadFortuneService();
+myCoach=new SwimmingCoach(fortueService);
+console.log(myCoach.getDailyWorkout());
+console.log(myCoach.getDailyFortune());
