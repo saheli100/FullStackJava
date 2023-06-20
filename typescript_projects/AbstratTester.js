@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var MyCricketCoach_1 = require("./MyCricketCoach");
+var MySwimCoach_1 = require("./MySwimCoach");
+var myCoach = new MyCricketCoach_1.MyCricketCoach();
+var myCoach1 = new MySwimCoach_1.MySwimCoach();
+console.log(myCoach.getDailyWorkout() + "\n");
+myCoach.a();
+console.log(myCoach1.getDailyWorkout() + "\n");
+myCoach1.a();

@@ -1,0 +1,11 @@
+//import { MyCoach } from "./MyCoach" ;
+import { MyCoach } from "./MyCoach";
+import { MyCricketCoach } from "./MyCricketCoach";
+import { MySwimmingCoach } from "./MySwimmingCoach";
+import { MySwimCoach } from "./MySwimCoach";
+let myCoach=new MyCricketCoach();
+let myCoach1=new MySwimCoach();
+console.log(myCoach.getDailyWorkout()+"\n");
+myCoach.a();
+console.log(myCoach1.getDailyWorkout()+"\n");
+myCoach1.a();
