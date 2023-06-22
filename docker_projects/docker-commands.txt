@@ -1,0 +1,14 @@
+final name application-name, add docker file.txt
+1- open cmd inside the project folder
+run as maven build- command is clean package install
+
+in cmd below two commands
+docker build -t dnilay/hello-world:1 .
+docker container run -p8081:8081 dnilay/hello-world:1
+docker container ls
+
+To remove everything- docker system prune
+
+[12:03] Nilay Das (Guest)
+
+>docker run --detach --env MYSQL_ROOT_PASSWORD=root --env MYSQL_USER=user1 --env MYSQL_PASSWORD=pass1 --env MYSQL_DATABASE=hr --name mysql --publish 3309:3306 mysql:latest
